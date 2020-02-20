@@ -19,10 +19,10 @@ export default class Hog extends Component{
         return(
             
             <div className="ui eight wide column"> 
-            {console.log(imgSource)}
+            {/* {console.log(imgSource)} */}
                 <div className="ui card" onClick={this.showInfoCard}>
                <h3>{name}</h3>
-               <img src={require(`../hog-imgs/${imgSource}.jpg`)}/>
+               <img src={require(`../hog-imgs/${imgSource}.jpg`)} alt={name}/>
                <div style={ {visibility: this.state.visibility} }>
                <p>specialty: {specialty}</p>
                <p>Highest Medal Acheived: {medal}</p>
